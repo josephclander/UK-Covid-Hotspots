@@ -1,0 +1,18 @@
+{
+  "name": "corona-data",
+  "version": "1.0.0",
+  "description": "Utilizing UK Corona Data API with UK Census Data",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js "
+  },
+  "author": "Joseph Lander",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -5,7 +5,7 @@ const selection = document.querySelector('#rank');
 selection.addEventListener('change', (event) => {
   const rankSelection = selection.value;
 
-  fetch('http://localhost:3000/data?selection=' + rankSelection)
+  fetch('/data?selection=' + rankSelection)
     .then((res) => res.json())
     .then((data) => {
       dataInput.innerHTML =

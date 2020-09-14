@@ -26,5 +26,5 @@ app.get('/*', (req, res) => {
 // update later when we've got data to send
 
 app.listen(port, () => {
-  console.log('Server is up and running on port' + port);
+  console.log('Server is up and running on port ' + port);
 });

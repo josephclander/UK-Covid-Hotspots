@@ -23,12 +23,14 @@ selection.addEventListener('change', (event) => {
         `</ol>` +
         (data.length > 9 ? `<p id="data__show">Show all values</p>` : '');
       const show = document.querySelector('#data__show');
-      show.addEventListener('click', () => {
-        const hiddenLists = document.querySelectorAll('.data__hide');
-        hiddenLists.forEach((li) => {
-          li.classList.remove('data__hide');
+      if (show) {
+        show.addEventListener('click', () => {
+          const hiddenLists = document.querySelectorAll('.data__hide');
+          hiddenLists.forEach((li) => {
+            li.classList.remove('data__hide');
+          });
+          show.classList.add('data__hide');
         });
-        show.classList.add('data__hide');
-      });
+      }
     });
 });

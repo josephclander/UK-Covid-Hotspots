@@ -4,7 +4,8 @@
   "description": "Utilizing UK Corona Data API with UK Census Data",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon src/app.js "
+    "dev": "nodemon src/app.js ",
+    "start": "node src/app.js"
   },
   "author": "Joseph Lander",
   "license": "ISC",

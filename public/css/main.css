@@ -14,7 +14,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 body {
@@ -22,19 +22,30 @@ body {
   background-color: white;
 }
 
-/* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
-/* This is linear interpolation */
-
-@media (min-width: 300px) {
+@media (min-width: 500px) {
   html {
-    font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1400 - 300)));
+    font-size: 110%;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
   html {
-    font-size: 22px;
+    font-size: 120%;
   }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 p {
@@ -55,9 +66,8 @@ header {
 }
 
 .logo {
-  margin-right: 0.5rem;
-  width: 40px;
-  height: 65.6px;
+  margin-right: 0.7rem;
+  height: 70px;
 }
 
 .logo__islands {
@@ -110,13 +120,12 @@ main {
 }
 
 .intro p {
-  line-height: 2rem;
+  line-height: 1.7;
 }
 
 .rank__label,
 .rank__options {
   margin: 2rem 1rem 0 1rem;
-  font-size: 1.2rem;
 }
 
 .rank__label {
